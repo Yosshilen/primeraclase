@@ -1,0 +1,50 @@
+<html>
+<head>
+  <title> Suma de dos Numeros </title>
+</head>
+<body>
+<script languaje="javascrip">
+var numero1;
+var numero2;
+var resultado;
+   function calcular()
+    {
+      numero1=parseInt(document.formulario1.nro1.value);
+	  numero2=parseInt(document.formulario1.nro2.value);
+	  resultado=numero1+numero2;
+	  document.formulario1.result.value=resultado;
+    }
+	function resta()
+	{
+	   numero1=parseInt(document.formulario1.nro1.value);
+	   numero2=parseInt(document.formulario1.nro2.value);
+	   resultado=numero1-numero2;
+	   document.formulario1.result.value=resultado;
+	}
+	function multiplicar()
+	{
+	   numero1=parseInt(document.formulario1.nro1.value);
+	   numero2=parseInt(document.formulario1.nro2.value);
+	   resultado=numero1*numero2;
+	   document.formulario1.result.value=resultado;
+	}
+	function dividir()
+	{
+	   numero1=parseInt(document.formulario1.nro1.value);
+	   numero2=parseInt(document.formulario1.nro2.value);
+	   resultado=numero1/numero2;
+	   document.formulario1.result.value=resultado;
+	}
+</script>
+<h2> Suma de dos Numeros </h2>
+<form name ="formulario1">
+  <h4> Digitar Numero 1: <input type="tex" id ="nro1" /><br /></h4>
+  <h4> Digitar Numero 2: <input type="tex" id ="nro2"/><br /> </h4>
+  <h4> Resultado: <input type="tex" id="result" /><br /> </h4>
+   <input type="button" value="Sumar" onclick="calcular()"> 
+   <input type="button" value="Restar" onclick="resta()">
+   <input type="button" value="Multiplicar" onclick="multiplicar()">
+   <input type="button" value="Dividir" onclick="dividir()">
+</form>
+</body>
+</html>
